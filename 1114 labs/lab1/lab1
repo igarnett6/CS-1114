@@ -1,0 +1,56 @@
+#startProblem1
+print("Problem 1: ")
+print("Please enter the first integer:")
+int1 = input()
+print("Please enter the second integer:")
+int2 = input()
+#int1 = int(input ("Please enteer the first integer"))
+sum = int(int1 + int2)
+difference = int(int1) - int(int2)
+product = int(int1)*int(int2)
+
+print("Their sum is: ", sum, "their difference is: ",
+      difference,    " their product is: ", product)
+
+
+print()
+print("Problem 2: ")
+print("Please enter a Fahrenheit temperature: ")
+
+
+temp1 = input()
+celsius = int(temp1) - 32 * (5/9)
+
+print("In Celsius it is:", int(celsius),
+      "In Fahrenheit it is:", temp1)
+print()
+print("Problem 3:")
+print("Please enter weight in pounds:")
+weight = input()
+ounces = int(weight)*16
+kg = int(weight)*.45
+
+print(weight, "pounds is equivalent to ", ounces,
+      "ounces and %.2f" % kg, "kilograms")
+#endProblem1
+
+#startProblem4
+print("Problem 4:")
+print("Please enter the first length's feet: ")
+feet = input()
+print("Please enter the first length's yards:")
+yards = input()
+print("Please enter the second length's feet: ")
+feet = int(feet)+ int(input())
+print("Please enter the second length's yards: ")
+yards = int(yards) + int(input())
+#endProblem4
+#if int(feet) >= 3;
+    #{yards = int(yards +1)
+    #feet = int(feet)-3}
+
+print("The sum is:", yards, "yards and", feet, "feet);
+
+
+
+

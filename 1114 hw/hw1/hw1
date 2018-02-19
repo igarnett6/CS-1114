@@ -1,0 +1,61 @@
+#Question 1:
+#a)10011011 = 155
+#b) 1101101 = 118
+#c) 3a8 = 952
+
+#Question 2:
+#a) 69 = 1100011
+#b) 485 = 111100101
+#c) 6d1a = 01101101000110
+
+#startQuestion3
+name = input("Please enter your name: ");
+print("Hi", name, ",Welcome to CS-UY 1114");
+#endQuesntion3
+
+#startQuestion4
+SEC_PER_YEAR = 31449600;
+basePop = int(307357870);
+bPerYear = int(SEC_PER_YEAR/7);
+dPerYear = int(SEC_PER_YEAR/13);
+iPerYear = int(SEC_PER_YEAR/35);
+year = int(input("Enter a year: "));
+yearDiff = year-2017;
+population = basePop + (yearDiff*bPerYear) + (yearDiff*dPerYear)\
++ (yearDiff*iPerYear);
+print("Population =", population);
+#endQuestion4
+
+#startQuestion5
+print("Please enter number of coins")
+quarters = int(input("# of quarters:"));
+dimes = int(input("# of dimes: "));
+nickels = int(input("# of nickles:"));
+pennies = int(input("# of pennies"));
+
+qVal = quarters*.25;
+dVal = dimes*.10;
+nVal = nickels*.05;
+pVal = pennies*.01;
+
+total = int(qVal + dVal + nVal + pVal);
+cTot = (qVal + dVal + nVal + pVal) - total
+print("The total is", total, "dollars and %.2f" % cTot, "cents");
+#endQuestion5
+
+#startQuestion6
+print("Please enter your amount in the format of dollars and cents in two separate lines:");
+dollars = int(input());
+cents = int(input());
+
+quarters = (dollars*4)+(cents/25);
+cents = cents%25;
+dimes = cents/10;
+cents = cents%10;
+nickels = cents/5;
+pennies = cents%5;
+
+
+print(dollars, "dollars and", cents, "cents are: ");
+print(int(quarters), "quarters,", int(dimes), "dimes,", int(nickels), ",nickels, and", int(pennies), "pennies");
+#endQuestion6
